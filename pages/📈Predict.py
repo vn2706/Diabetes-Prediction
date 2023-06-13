@@ -47,9 +47,7 @@ def data():
 
 @st.cache_resource(show_spinner="loading...")
 def pickle_data():
-        url="https://raw.githubusercontent.com/Chan5ru222001/Streamlit_app/main/pages/model.pkl"
-        response = requests.get(url)
-        with open(response, 'rb') as file:
+        with open("Streamlit_app/model.pkl", 'rb') as file:
             loaded_model = pickle.load(file)
         return loaded_model
 
