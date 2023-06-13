@@ -22,7 +22,7 @@ def home_page():
 
     @st.cache_data(show_spinner="loading...")
     def load_data():
-        df = pd.read_csv("D:\VS Code\Pandas\Streamlit\Cleaned.csv")
+        df = pd.read_csv("https://raw.githubusercontent.com/Chan5ru222001/Streamlit_app/main/Cleaned.csv")
         df = df.drop(columns=['Unnamed: 0', 'age_normalized', 'bmi_normalized',
                     'HbA1c_level_normalized', 'blood_glucose_level_normalized'])
         return df
