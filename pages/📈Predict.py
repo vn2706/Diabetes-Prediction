@@ -41,7 +41,7 @@ vedio()
 
 @st.cache_data
 def data():
-    df_pred = pd.read_csv("https://raw.githubusercontent.com/Chan5ru222001/Streamlit_app/main/Diabetes_data.csv")
+    df_pred = pd.read_csv("Diabetes_data.csv")
     df_pred.drop(columns=['Unnamed: 0'], inplace=True)
     return df_pred
 
