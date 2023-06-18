@@ -7,7 +7,7 @@ st.set_page_config(page_title="Interactive Plots",page_icon="https://cdn-icons-p
 
 @st.cache_data(show_spinner="Loading")
 def load_data():
-    df = pd.read_csv("https://raw.githubusercontent.com/Chan5ru222001/Streamlit_app/main/Cleaned.csv")
+    df = pd.read_csv("Cleaned.csv")
     df = df.drop(columns=['Unnamed: 0', 'age_normalized', 'bmi_normalized',
                  'HbA1c_level_normalized', 'blood_glucose_level_normalized'])
     return df
