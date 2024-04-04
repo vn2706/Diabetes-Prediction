@@ -6,3 +6,5 @@ This web app utilizes machine learning algorithms to analyze data related to dia
 
 **Model**
 Decision Tree Classification
+
+https://diabetes-prediction-24.streamlit.app/
